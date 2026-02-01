@@ -31,6 +31,8 @@ class Settings(BaseSettings):
     pinecone_environment: str = Field(..., description="Pinecone environment")
     pinecone_index_name: str = Field(default="workplace-docs", description="Pinecone index name")
     pinecone_dimension: int = Field(default=1536, description="Vector dimension")
+    pinecone_cloud: str = Field(default="aws", description="Pinecone cloud provider")
+    pinecone_region: str = Field(default="us-east-1", description="Pinecone region")
     
     # Microsoft Teams Bot Configuration
     microsoft_app_id: Optional[str] = Field(default=None, description="Azure Bot App ID")
