@@ -1,1 +1,3 @@
-"""LangChain chains package"""
+"""
+LangChain chains module.
+"""
